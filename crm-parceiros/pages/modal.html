@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Outcenter - Parceiros</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Principal font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">  
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default-topo navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand-logo"><img src="../img/outcenter.png" width="170" height="50" alt=""></div>
+            </div>
+            <!-- /.navbar-header -->
+            
+
+            <ul class="nav navbar-top-links navbar-right">
+               
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw" style="color:white"></i> <i class="fa fa-caret-down" style="color:white"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i> Configurações</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-power-off fa-fw"></i> Sair</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-desktop fa-fw"></i> Painel</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-chart-bar fa-fw"></i> Gráficos</a>
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa fa-file-invoice fa-fw"></i> Relatórios</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Contato</a>
+                         </li>
+                       
+                         <div class="col-m-6"></div>
+                         <div class="form-group"></div>
+                        
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+    </div>
+<div class="body">
+    <div class="formPesquisa">
+  <!---------------------------------------------------------------------------------->
+        <!-- Formulario de pesquisa -->
+        <!---------------------------------------------------------------------------------->
+        <form id="formPesquisa" name="formPesquisa" class="col-md-9 col-xs-12 form-center">
+
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtBuscaId">
+                        ID
+                    </label>
+                    <input type="number" class="form-control" placeholder="Digite o id do contrato" ng-model="vm.filtro.id_contrato" />
+                </div>
+    
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtBuscaId">
+                        ID Cliente
+                    </label>
+                    <input type="number" class="form-control" placeholder="Digite o id do cliente" ng-model="vm.filtro.id_cliente" />
+                </div>
+    
+                <div class="form-label col-md-4 col-xs-12">
+                    <label class="nicelabel" for="txtCPF">
+                        CPF/CNPJ
+                    </label>
+                    <input type="text" class="form-control" id="txtCPF" ng-model="vm.filtro.cpf_cnpj" name="txtCPF" maxlength="100" aria-label="CPF"
+                        ui-br-cpfcnpj-mask placeholder="Digite apenas números" />
+                </div>
+    
+                <div class="form-label col-md-4 col-xs-12">
+                    <label class="nicelabel" for="lstTipoPessoa">
+                        Tipo Pessoa
+                    </label>
+                    <select class="form-control" name="lstTipoPessoa" aria-label="filtro" ng-model="vm.filtro.tipo_pessoa">
+                        <option value="">Selecione o tipo</option>
+                        <option value="f">Física</option>
+                        <option value="j">Jurídica</option>
+                    </select>
+                </div>
+    
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtBuscaCliente">
+                        Cliente
+                    </label>
+                    <input type="text" class="form-control" id="txtBuscaCliente" aria-label="Nome" placeholder="Digite o nome do cliente" maxlength="80"
+                        ng-model="vm.filtro.nome_cliente" />
+                </div>
+    
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtBuscaVendedor">
+                        Vendedor
+                    </label>
+                    <input type="text" class="form-control" id="txtBuscaVendedor" aria-label="Nome" placeholder="Digite o nome do vendedor" maxlength="80"
+                        ng-model="vm.filtro.nome_vendedor" />
+                </div>
+    
+                <div class="form-label col-xs-12 col-md-6">
+                    <label class="nicelabel" for="lstBuscaCidade">
+                        Filial
+                    </label>
+                    <select id="lstBuscaFilial" aria-label="Filial" class="form-control" name="lstBuscaFilial" ng-model="vm.filtro.filial" ng-options="filial.id as filial.nome for filial in vm.arrFiliais | orderBy: 'nome'">
+                        <option value="">Escolha a filial</option>
+                    </select>
+                </div>
+
+                <div class="both"></div>
+    
+                <div class="form-label col-md-12 col-sm-12 col-xs-12 text-right">
+                    <button class="btn btn-primary btn-form-search" ng-disabled="formPesquisa.$invalid" ng-click="vm.pesquisar()">
+                        Pesquisar
+                    </button>
+                </div>
+    
+            </form>
+</div>
+</div>
+        <!---------------------------------------------------------------------------------->
+        <!-- Fim Formulario de pesquisa -->
+        <!---------------------------------------------------------------------------------->
+
+        <div id="page-wrapper">
+            <div class="row">
+                    <div class="panel panel-default">
+                                <!-- /.panel-heading -->
+                                <div class="row"></div>
+                                        <h1 class="page-header">Painel</h1>
+                                    <table id="dataTables-example" width="100%" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr class="topo-table">
+                                                <th>Usuário</th>
+                                                <th>% Ganho Planta</th>
+                                                <th>% Impsotos</th>
+                                                <th>Valor p/ OS</th>
+                                                <th>Imposto Repasse</th>
+                                                <th class="text-table">Ganho Fixo</th>
+                                                <th class="text-table">Info</th>
+                                          
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd gradeX">
+                                                <td>001</td>
+                                                <td>26%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>  
+                                            </tr>
+
+                                            <tr class="even gradeC">
+                                                <td>002</td>
+                                                <td>27%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+
+                                            </tr>
+                                            <tr class="odd gradeA">
+                                                <td>003</td>
+                                                <td>28%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+   
+                                            </tr>
+                                            <tr class="even gradeA">
+                                                <td>004</td>
+                                                <td>29%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+
+                                            </tr>
+                                            <tr class="odd gradeA">
+                                                <td>005</td>
+                                                <td>30%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+
+                                            </tr>
+                                            <tr class="even gradeA">
+                                                <td>006</td>
+                                                <td>31%</td>
+                                                <td>R$ 20.000,00</td>
+                                                <td>R$ 18.000,00</td>
+                                                <td>R$ 1.000,00</td>
+                                                <td class="text-table">5%</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+    
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal"  aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">Parceiros | Vendas Ativas</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <table id="dataTables-example" width="100%" class="table table-striped table-bordered table-hover">
+                                                        <thead>
+                                                        <tr class="topo-table-modal">
+                                                            <th class="text-center">De</th>
+                                                            <th class="text-center">Até</th>
+                                                            <th class="text-center">Percentual</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <tr class="even gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                        <tr class="odd gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                        <tr class="even gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                        <tr class="odd gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                        <tr class="even gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                        <tbody>
+                                                        <tr class="odd gradeA">
+                                                            <td class="text-center">26/08</td>
+                                                            <td class="text-center">30/08</td>
+                                                            <td class="text-center">20%</td>
+                                                        </tr>
+                                                        </tbody>
+                                                              </table>
+                                                </div>
+                                                <div class="modal-footer">
+                                                </div>
+                                                </div>
+                                                <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.modal -->
+
+                                    
+                                </div>
+                        </div>
+                         
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                
+                   
+                </div>
+            </div>
+            
+            <!-- /.row -->
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Outcenter - Parceiros</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Principal font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">  
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default-topo navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand-logo"><img src="../img/outcenter.png" width="170" height="50" alt=""></div>
+            </div>
+            <!-- /.navbar-header -->
+            
+
+            <ul class="nav navbar-top-links navbar-right">
+               
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw" style="color:white"></i> <i class="fa fa-caret-down" style="color:white"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw"></i> Configurações</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#"><i class="fa fa-power-off fa-fw"></i> Sair</a>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                    <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-desktop fa-fw"></i> Painel</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-chart-bar fa-fw"></i> Gráficos</a>
+                        </li>
+                         <li>
+                            <a href="#"><i class="fa fa-file-invoice fa-fw"></i> Relatórios</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Contato</a>
+                         </li>
+                       
+                         <div class="col-m-6"></div>
+                         <div class="form-group"></div>
+                        
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+    </div>
+<div class="body">
+    <div class="formPesquisa">
+        
+        <!---------------------------------------------------------------------------------->
+        <!-- Formulario de pesquisa -->
+        <!---------------------------------------------------------------------------------->
+        <form id="formPesquisa" name="formPesquisa" class="col-md-9 col-xs-12 form-center"><br>
+            <div class="row"></div>
+            <h3 class="page-header">Endereço</h3>     
+            <div class="form-label col-md-4 col-xs-12">
+                    <label class="nicelabel" for="txtCEP">
+                    CEP <span class="asterisco">(obrigatório)</span>
+                    </label>
+                     <input type="text" class="form-control" id="txtCEP" name="txtCEP" maxlength="100" aria-label="CEP"
+                    placeholder="Digite apenas números" />
+                </div>
+    
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtEstado">
+                        Estado <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtEstado" aria-label="Estado" placeholder="Digite o Estado" maxlength="80" />
+                </div>
+
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtCidade">
+                        Cidade <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtCidade" aria-label="Cidade" placeholder="Digite a Cidade" maxlength="80" />
+                </div>
+
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtBairro">
+                        Bairro <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtBairro" aria-label="Bairro" placeholder="Digite o Bairro" maxlength="80" />
+                </div>
+
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtLogradouro">
+                        Logradouro <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtLogradouro" aria-label="Logradouro" placeholder="Digite o Logradouro" maxlength="80" />
+                </div>
+
+                <div class="form-label col-md-4 col-xs-12">
+                    <label class="nicelabel" for="txtCPF">
+                        Número <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <input type="text" class="form-control" id="txtNumero" name="txtNumero" maxlength="100" aria-label="Numero"
+                       placeholder="Digite apenas números" />
+                </div>
+                
+                <div class="form-label col-xs-12 col-md-4">
+                    <label class="nicelabel" for="txtLogradouro">
+                        Complemento 
+                    </label>
+                    <input type="text" class="form-control" id="txtLogradouro" aria-label="Logradouro" placeholder="Digite o Logradouro" maxlength="80" />
+                </div>
+
+                <div class="form-label col-md-4 col-xs-12">
+                    <label class="nicelabel" for="lstFilial">
+                        Filial <span class="asterisco">(obrigatório)</span>
+                    </label>
+                    <select class="form-control" name="lstFilial" aria-label="filtro" placeholder="Escolha a Filial">  
+                        <option value="">Outcenter - Bairro Posses</option>
+                        <option value="">Outcenter - Bandeira so Sul</option>
+                        <option value="">Outcenter - Botelhos</option>
+                        <option value="">Outcenter - Cabo Verde</option>
+                        <option value="">Outcenter - Campestre</option>
+                        <option value="">Outcenter - Divisa Nova</option>
+                        <option value="">Outcenter - Laranjeiras de Caldas</option>
+                        <option value="">Outcenter - Palmeiral</option>
+                        <option value="">Outcenter - Poços de Caldas </option>
+                        <option value="">Outcenter - São Bartolomeu </option>
+                        <option value="">Outcenter - São Gonçalo</option>
+                    </select>
+                </div>       
+
+                <div class="both"></div>
+    
+                <div class="form-label col-md-12 col-sm-12 col-xs-12 text-right">
+                    <button class="btn btn-primary btn-form-search" ng-disabled="formPesquisa.$invalid" ng-click="vm.pesquisar()">
+                        Localizar
+                    </button>
+                </div>
+    
+            </form>
+</div>
+</div>
+        <!---------------------------------------------------------------------------------->
+        <!-- Fim Formulario de pesquisa -->
+        <!---------------------------------------------------------------------------------->
+
+        <div id="page-wrapper">
+            <div class="row">
+                    <div class="panel panel-default">
+                                <!-- /.panel-heading -->
+                                <div class="row"></div>
+                                        <h1 class="page-header">Atd</h1>
+                                    <table id="dataTables-example" width="100%" class="table table-striped table-bordered table-hover">
+                                        <thead>
+                                            <tr class="topo-table">
+                                                <th>Endereço</th>
+                                                <th>Distância</th>
+                                                <th>Portas Livres</th>
+                                                <th>Mapa</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="odd gradeX">
+                                                <td>R. Salvador Blasi, 40 - Jardim Esperança, Poços de Caldas - MG, 37713-306, Brasil</td>
+                                                <td>21m</td>
+                                                <td>14</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>  
+                                            </tr>
+
+                                            <tr class="even gradeC">
+                                                <td>R. Filomena Acconcia Togni, 206 - Jardim Esperança, Poços de Caldas - MG, 37713-306, Brasil</td>
+                                                <td>69m</td>
+                                                <td>1</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+
+                                            </tr>
+                                            <tr class="odd gradeA">
+                                                <td>R. Benedicto Lopes Buono, 723 - Jardim Esperanca, Poços de Caldas - MG, Brasil</td>
+                                                <td>190m</td>                                               
+                                                <td>1</td>
+                                                <td class="text-table"><button type="button" class="btn btn-success btn-circle" data-toggle="modal" data-target="#myModal"><i class="fa fa-plus"></i>
+                                                </button></td>
+   
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="myModal"  aria-labelledby="myModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                <h4 class="modal-title" id="myModalLabel">Localização Atd</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3703.611486815881!2d-46.57129608505358!3d-21.833937085567772!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c9c3168186b55b%3A0x5da7d3e0c48dcfd3!2sR.+Salvador+Blasi%2C+40+-+Jardim+Esperanca%2C+Po%C3%A7os+de+Caldas+-+MG%2C+37713-306!5e0!3m2!1sen!2sbr!4v1541789997413" width="750" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                                </div>
+                                                <div class="modal-footer">
+                                                </div>
+                                                </div>
+                                                <!-- /.modal-content -->
+                                                </div>
+                                                <!-- /.modal-dialog -->
+                                                </div>
+                                                <!-- /.modal -->
+
+                                    
+                                </div>
+                        </div>
+                         
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                
+                   
+                </div>
+            </div>
+            
+            <!-- /.row -->
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
